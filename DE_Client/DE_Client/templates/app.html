@@ -1,0 +1,78 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CLIENT</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{% block script_stylesheet %}
+		{% endblock %}
+	</head>
+	<body>
+		<div class="appcontainer">
+			<div class="leftmenu animated slideInLeft">
+				<div class="profile_col">
+					<span class="helper"></span>
+					<img src="{% static 'assets/user/profile.png' %}" id="profile_pic">
+				</div>
+                <a href="app">
+                    <div class="col {{user}}" id="personalinformation">
+                        <div class="icon">
+                            <span class="helper"></span>
+                            <img src="{% static 'assets/logo/profileicon.svg' %}">
+                        </div>
+                        <div class="wordDes">
+                            <p>USER PROFILE</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="product">
+                    <div class="col {{product}}" id="productinformation">
+                        <div class="icon">
+                            <span class="helper"></span>
+                            <img src="{% static 'assets/logo/footwearicon.svg' %}">
+                        </div>
+                        <div class="wordDes">
+                            <p>PRODUCT INFO</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="view">
+                    <div class="col {{view}}" id="visulization">
+                        <div class="icon">
+                            <span class="helper"></span>
+                            <img src="{% static 'assets/logo/dataicon.svg' %}">
+                        </div>
+                        <div class="wordDes">
+                            <p>MONITOR RESULTS</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="notification">
+                    <div class="col {{notice}}" id="notifications">
+                        <div class="icon">
+                            <span class="helper"></span>
+                            <img src="{% static 'assets/logo/pdficon.svg' %}">
+                        </div>
+                        <div class="wordDes">
+                            <p>NOTIFICATIONS</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="http://127.0.0.1:8080/client/">
+                    <div class="col" id="logout">
+                        <div class="icon" id="special">
+                            <span class="helper"></span>
+                            <img src="{% static 'assets/logo/logout.svg' %}" alt="">
+                        </div>
+                        <div class="wordDes">
+                            <p>LOGOUT</p>
+                        </div>
+                    </div>
+                </a>
+			</div>
+			{% block contentpool %}
+			{% endblock %}
+		</div>
+	</body>
+</html>

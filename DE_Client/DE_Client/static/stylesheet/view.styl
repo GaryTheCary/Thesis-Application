@@ -1,0 +1,169 @@
+@import 'jeet'
+@import 'util.styl'
+
+//edit()
+
+bp_one = 975px
+
+.report_section
+	height 100%
+	overflow hidden
+	@media screen and (min-width: bp_one)
+		center(80%)
+	@media screen and (max-width: bp_one)
+		center(90%)
+	@media screen and (max-width: 500px)
+		center(100%)
+
+h3
+	text-indent 0.2rem
+	fontRegular()
+	color awesomeDarkBrown
+	margin 0px
+	padding 0px
+	@media screen and (max-width: 500px)
+		text-align center
+
+.line 
+	width 100%
+	height 1px
+	background-color awesomeBrown
+		
+
+.horizontal_col
+	width 100%
+	@media screen and (min-height: 600px)
+		height 20%
+	@media screen and (max-height: 600px)
+		height 150px
+
+.spaceholderV
+	width 100%
+	@media screen and (min-height: 600px)
+		height 25%
+	@media screen and (max-height: 600px)
+		height 160px
+
+.spanI
+	span(106/385)
+	height 100%
+	border 0.1rem solid awesomeDarkBrown
+	@media screen and (max-width: 500px)
+		col(1/3)
+.spanIII
+	span(1/55)
+	height 100%	
+	@media screen and (max-width: 500px)
+		display none		
+.spanII
+	span(318/770)
+	height 100%
+	border 0.1rem solid awesomeDarkBrown
+	@media screen and (max-width: 500px)
+		column(1/3)
+
+.up_block
+	height 80%
+	width 100%
+	background-color awesomeDarkBrown
+	text-align center
+	fontRegular()
+	color awesomeDarkPurple
+	font-size 6.25rem
+	@media screen and (max-width: 500px)
+		display table
+		position relative
+		font-size 3.25rem
+	
+.up_block > p
+	vertical-align middle
+	@media screen and (max-width: 500px)
+		display table-cell	 
+
+.down_block
+	height 20%
+	width 100%
+	fontRegular()
+	color awesomeDarkBrown
+	font-size 1.25rem
+	text-align center
+	@media screen and (max-width: 500px)
+		display table
+		position relative
+		font-size 0.75rem
+
+.down_block > p
+	vertical-align middle
+	@media screen and (max-width: 500px)
+		display table-cell
+
+.m_title
+	fontRegular()
+	color awesomeDarkBrown
+	font-size 1.25rem
+
+.right_section
+	font-size 1.0rem 
+	color awesomeDarkBrown
+	fontRegular()
+	height 4.5%
+
+.horizontal_colII
+	width 100%
+	border 0.1rem solid awesomeDarkBrown
+	@media screen and (min-height: 600px)
+		height 20%
+	@media screen and (max-height: 600px)
+		height 50px
+
+#noticesContainer
+	width 100%
+	@media screen and (min-height: 600px)
+		height 40%
+	@media screen and (max-height: 600px )
+		350px
+
+.order
+	span(1/10)
+	color awesomeDarkBrown
+	font-size 3.0rem
+	fontRegular()
+	text-align center
+	height 100%
+
+.notice_content
+	span(9/10)
+	background-color awesomeDarkBrown
+	color awesomeDarkPurple
+	fontRegular()
+	font-size 1.0rem
+	height 100%	
+	text-indent 2rem
+	position relative
+	display table
+
+.notice_content > p
+	display table-cell
+	vertical-align middle
+
+.pcol
+	span(1/6)
+	height 100%
+	text-align end
+	position relative
+	vertical-align middle
+	display table
+.pcol > p
+	display: table-cell
+	vertical-align middle
+	text-align end
+.spaceCol
+	span(2/3)
+	height 100%
+
+
+
+
+									 	 					
+					
+			

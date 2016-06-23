@@ -1,0 +1,83 @@
+{% extends "app.html" %}
+
+{% load staticfiles %}
+
+{% block script_stylesheet %}
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/animate.css/animate.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/semantic/dist/semantic.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/animation.css' %}">
+<script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/semantic/dist/semantic.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/view.css' %}">
+{% endblock %}
+
+{% block contentpool %}
+<div class="content_pool animated slideInRight">
+	<div class="report_section">
+		<div class="spaceholderV"></div>
+		<h3>USER REPORT - <label id="dategange">( {{ timeRange }} )</label></h3>
+		<div class="line"></div>
+		<div class="spaceholderIII"></div>
+		<div class="horizontal_col">
+			<div class="spanI">
+				<div class="up_block">
+					<p id="heel_height">4.25</p>
+				</div>
+				<div class="down_block">
+					<p>HEEL HEIGHT : CM</p>
+				</div>
+			</div>
+			<div class="spanIII"></div>
+			<div class="spanII">
+				<div class="up_block">
+					<p id="pressure_part">REAR</p>
+				</div>
+				<div class="down_block">
+					<p>WALKING TOO MUCH IN PART OF THE FEET</p>
+				</div>
+			</div>
+			<div class="spanIII"></div>
+			<div class="spanI">
+				<div class="up_block">
+					<p id="walking_speed">0.45</p>
+				</div>
+				<div class="down_block">
+					<p>WALKING SPEED : M/S</p>
+				</div>
+			</div>
+		</div>
+		<div class="spaceholderIII"></div>
+		<div class="horizontal_col">
+			<div class="spanI">
+				<div class="up_block">
+					<p id="pressure_load">1.27</p>
+				</div>
+				<div class="down_block">
+					<p>PRESSURE LOAD : KPA/M2</p>
+				</div>
+			</div>
+			<div class="spanIII"></div>
+			<div class="spanI">
+				<div class="up_block">
+					<p id="active">040</p>
+				</div>
+				<div class="down_block">
+					<p>ACTIVATE : DAY</p>
+				</div>
+			</div>
+			<div class="spanIII"></div>
+			<div class="spanII">
+				<div class="up_block">
+					<p id=""></p>
+				</div>
+				<div class="down_block">
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<div class="spaceholderIII"></div>
+		<div class="line"></div>
+	</div>
+</div>	
+{% endblock %}

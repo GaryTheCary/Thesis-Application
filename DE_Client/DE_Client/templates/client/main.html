@@ -1,0 +1,82 @@
+{% extends "app.html" %}
+
+{% load staticfiles %}
+
+{% block script_stylesheet %}
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/animate.css/animate.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/semantic/dist/semantic.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/animation.css' %}">
+<script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/semantic/dist/semantic.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
+
+{% endblock %}
+
+{% block contentpool %}
+
+<div class="content_pool animated slideInRight">
+	<div class="user_info">
+		<div class="spaceholderI"></div>
+		<div class="user_des">
+			<img src="{% static 'assets/user/profile.png' %}">
+			<p>Meggie Demagio</p>
+		</div>
+		<div class="spaceholderII"></div>
+		<div class="lineholder">
+			<img src="{% static 'assets/logo/line.svg' %}">
+		</div>
+		<div class="spaceholderIII"></div>
+		<div class="info_session">
+			<div class="block">NAME</div>
+			<div class="fill_content" id="name">Maggie Demagio</div>
+		</div>
+		<div class="info_session">
+			<div class="block">GENDER</div>
+			<div class="fill_content" id="gender">Female</div>
+		</div>
+		<div class="info_session">
+			<div class="block">EMAIL</div>
+			<div class="fill_content" id="email">maggiedemagio@gmail.com</div>
+		</div>
+		<div class="info_session">
+			<div class="block">USER ID</div>
+			<div class="fill_content" id="id">xxxx-xxxx-xxxx-xxxx</div>
+		</div>
+		<div class="info_session">
+			<div class="block">AGE</div>
+			<div class="fill_content" id="age">32</div>
+		</div>
+		<div class="lineholder">
+			<img src="{% static 'assets/logo/line.svg' %}">
+		</div>
+		<div class="spaceholderIII"></div>
+		<div class="info_session">
+			<div class="block">DE-NAME</div>
+			<div class="fill_content" id="supervisor">Lana Delane</div>
+		</div>
+		<div class="info_session">
+			<div class="block">DE-ID</div>
+			<div class="fill_content" id="supervisorid">xxxx-xxxx-xxxx-xxxx</div>
+		</div>
+		<div class="info_session">
+			<div class="block">DE-EMAIL</div>
+			<div class="fill_content" id="supervisor">LanaDelane@louberton.com</div>
+		</div>
+		<div class="info_session">
+			<div class="block">ACTIVE</div>
+			<div class="fill_content" id="active">145 D</div>
+		</div>
+		<div class="info_session">
+			<div class="block">SERVICE</div>
+			<div class="fill_content" id="service">xxxx-xxxx-xxxx-xxxx</div>
+		</div>
+		<div class="lineholder">
+			<img src="{% static 'assets/logo/line.svg' %}">
+		</div>
+		<div class="info_session" id="btn_block">
+			<button id="updateBTN" class="ui mini olive button hvr-shutter-out-horizontal">UPDATE</button>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

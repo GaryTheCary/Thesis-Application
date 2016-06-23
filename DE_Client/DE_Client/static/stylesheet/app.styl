@@ -1,0 +1,209 @@
+@import 'jeet'
+@import 'util.styl'
+
+bp_one = 975px
+
+//edit()
+
+// There are two breaking points: bp_one and 500px
+// Height breakingpoint: 600px
+
+// get all the {a} tag and set none style for it
+
+a
+	text-decoration none
+
+a:hover
+	text-decoration none
+
+a:hover > div
+	background-color awesomeDarkPurpleIV
+
+body
+	background-color awesomeDarkPurple
+	position absolute 
+	width 100%
+	height 100%
+	overflow hidden
+
+.appcontainer
+	width 100%
+	height 100%
+	@media screen and (min-width: bp_one)
+		position relative
+	@media screen and (max-width: bp_one)
+		position fixed
+	@media screen and (max-width: 500px)
+		position relative		
+
+.leftmenu
+	background-color awesomeLightPurple
+	height 100%
+	@media screen and (min-width: bp_one)
+		span(3/20)
+	@media screen and (max-width: bp_one)
+		width 150px
+		position fixed
+	@media screen and (max-width: 500px)
+		display none
+
+.content_pool
+	height 100%
+	@media screen and (min-width: bp_one)
+		span(17/20)
+	@media screen and (max-width: bp_one)
+		width 750px
+		margin-left 150px
+	@media screen and (max-width: 500px)
+		margin 0px
+		width 100%				
+
+
+.profile_col
+	margin 0px
+	padding 0px
+	width 100%
+	text-align center
+	@media screen and (max-width:500px)
+		display none
+	@media screen and (min-height: 600px)
+		height 17%
+	@media screen and (max-height: 600px)
+		height 120px				
+
+.profile_col > img
+	width 70px
+	vertical-align middle
+	text-align center
+	@media screen and (max-width: 500px)
+		display none
+	
+
+				
+.col
+	margin 0px
+	padding 0px
+	width 100%
+	@media screen and (max-width:500px)
+		width 0px
+	@media screen and (min-height: 600px)
+		height 10%
+	@media screen and (max-height: 600px)
+		height 70px			
+
+.icon 
+	span(1/2)
+	height 100%
+	text-align center
+.icon > img
+	width 40px
+	vertical-align middle
+	text-align center
+	@media screen and (max-width: 500px)
+		width 0px
+#special > img
+	width 30px !important
+
+.wordDes
+	span(1/2)
+	height 100%
+	position relative
+	display table
+.wordDes > p
+	display table-cell
+	vertical-align middle
+	fontRegular()
+	color awesomeDarkBrown
+	@media screen and (max-width: 500px)
+		display none							
+
+.default
+	background-color awesomeLightPurple
+
+.selected
+	background-color awesomeDarkPurpleIII
+
+.helper
+	display inline-block
+	height 100%
+	vertical-align middle
+
+.user_info
+	height 100%
+	@media screen and (min-width: bp_one)
+		center(80%)
+	@media screen and (max-width: bp_one)
+		center(80%)
+	@media screen and (max-width: 500px)
+		center(90%)	
+
+.spaceholderI
+	width 100%
+	@media screen and (min-height: 600px)
+		height 20%
+	@media screen and (max-height: 600px)
+		height 160px
+
+.spaceholderII
+	width 100%
+	@media screen and (min-height: 600px)
+		height 3%
+	@media screen and (max-height: 600px)
+		height 20px
+
+.spaceholderIII
+	width 100%
+	@media screen and (min-height: 600px)
+		height 1%
+	@media screen and (max-height: 600px)
+		height 12px
+
+.user_des
+	width 100%
+	text-align center
+.user_des > img
+	width 90px
+.user_des > p
+	font-size 1.0rem
+	fontRegular()
+	color awesomeDarkBrown
+	
+.lineholder
+	width 100%
+	text-align center
+.lineholder > img
+	width 80%
+	@media screen and (max-width: 500px)
+		width 100%
+
+.info_session
+	center(80%)
+.block
+	col(1/5)
+	background-color awesomeDarkBrown
+	text-align center
+	fontRegular()
+	font-size 1.0rem
+	color awesomeDarkPurple
+
+.fill_content
+	col(4/5)	
+	fontRegular()
+	font-size 1.0rem
+	color awesomeDarkBrown
+	
+#updateBTN
+	background-color awesomeBrown !important
+	fontRegular()
+	color awesomeDarkPurple
+	border-radius 0.2rem
+
+#btn_block
+	text-align right		
+			
+				
+								
+
+		
+
+					

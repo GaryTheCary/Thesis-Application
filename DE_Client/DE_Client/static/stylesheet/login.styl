@@ -1,0 +1,84 @@
+@import 'jeet'
+@import 'util.styl'
+
+body
+	position absolute 
+	margin 0px
+	padding 0px
+	width 100%
+	height 100%
+	overflow hidden
+	background awesomeDarkPurple
+
+.container
+	overflow hidden
+	height 100%
+	@media screen and (min-width: 700px) 
+		center(50%)
+	@media screen and (max-width: 700px) 
+		center(80%)
+
+.spaceholder
+	width 100%
+	@media screen and (min-height: 600px)
+		height 30%
+	@media screen and (max-height: 600px)
+		height 200px
+
+.spaceholder_small
+	width 100%
+	@media screen and (min-height: 600px)
+		height 3%
+	@media screen and (max-height: 600px)
+		height 20px			
+	
+.logo_holder
+	text-align center
+
+.logo_holder > img
+	width 30px
+
+.description
+	fontRegular()
+	font-size 1.25rem
+	color awesomeBrown
+	@media screen and (min-width: 700px)
+		center(50%)
+	@media screen and (max-width: 700px)
+		center(80%)
+
+.formfiled
+	@extends .description
+	text-align center
+
+input 
+	fontRegular()
+
+#loginBTN
+	fontRegular()
+	width 100%
+	background-color awesomeBrown !important
+
+.optionsfield
+	@extends .description
+	font-size 0.75rem
+
+#signup
+	span(1/2)
+	text-align right
+	fontRegular()
+	color awesomeBrown
+	
+#forgotpassword
+	span(1/2)
+	fontRegular()
+	color awesomeBrown
+	padding-right 0
+
+.errorfield
+	fontRegular()
+	color awesomeBrown
+	text-align center
+					
+
+		

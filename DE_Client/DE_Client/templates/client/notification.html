@@ -1,0 +1,61 @@
+{% extends "app.html" %}
+
+{% load staticfiles %}
+
+{% block script_stylesheet %}
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/animate.css/animate.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/semantic/dist/semantic.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/animation.css' %}">
+<script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/semantic/dist/semantic.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/view.css' %}">
+<link rel="stylesheet" href="{% static 'bower_components/sweetalert/sweetalert.css' %}">
+<script type="text/javascript" src="{% static 'bower_components/sweetalert/sweetalert.min.js' %}"></script>
+
+{% endblock %}
+
+{% block contentpool %}
+
+<!--  This part of data need to be add dynamically from the server in python by clicking the update button  -->
+
+    <div class="content_pool animated slideInRight">
+        <div class="user_info">
+
+            <div class="spaceholderI"></div>
+            <div class="m_title"><p>NOTIFICATIONS</p></div>
+            <div class="line"></div>
+            <div class="spaceholderIII"></div>
+            <div class="right_section">
+                {% csrf_token %}
+                <div class="spaceCol"></div>
+                <input type="hidden" id="val">
+                <div class="pcol">
+                    <p id="previous"> &nbsp; < PREVIOUS &nbsp; </p>
+                </div>
+                <div class="pcol">
+                    <p id="next"> &nbsp; NEXT > &nbsp; </p>
+                </div>
+            </div>
+            <div class="spaceholderIII"></div>
+            <div class="line"></div>
+            <div class="spaceholderIII"></div>
+            <div id="noticesContainer">
+            {% for item in datalist %}
+                <div class="horizontal_colII">
+                    <div class="order">
+                        <p>{{ forloop.counter }}</p>
+                    </div>
+                    <div class="notice_content">
+                        <p>{{ item }}</p>
+                    </div>
+                </div>
+                <div class="spaceholderIII"></div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="{% static 'script/loadMessage.js' %}"></script>
+
+{% endblock %}

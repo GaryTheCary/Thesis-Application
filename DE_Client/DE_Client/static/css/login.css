@@ -1,0 +1,219 @@
+@font-face {
+  font-family: zagBold;
+  src: url("/static/assets/font/ZagBold.otf");
+}
+@font-face {
+  font-family: zagRegular;
+  src: url("/static/assets/font/ZagRegular.otf");
+}
+body {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #282738;
+}
+.container {
+  overflow: hidden;
+  height: 100%;
+}
+@media screen and (min-width: 700px) {
+  .container {
+    *zoom: 1;
+    width: auto;
+    max-width: 50%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .container:before,
+  .container:after {
+    content: '';
+    display: table;
+  }
+  .container:after {
+    clear: both;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    *zoom: 1;
+    width: auto;
+    max-width: 80%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .container:before,
+  .container:after {
+    content: '';
+    display: table;
+  }
+  .container:after {
+    clear: both;
+  }
+}
+.spaceholder {
+  width: 100%;
+}
+@media screen and (min-height: 600px) {
+  .spaceholder {
+    height: 30%;
+  }
+}
+@media screen and (max-height: 600px) {
+  .spaceholder {
+    height: 200px;
+  }
+}
+.spaceholder_small {
+  width: 100%;
+}
+@media screen and (min-height: 600px) {
+  .spaceholder_small {
+    height: 3%;
+  }
+}
+@media screen and (max-height: 600px) {
+  .spaceholder_small {
+    height: 20px;
+  }
+}
+.logo_holder {
+  text-align: center;
+}
+.logo_holder > img {
+  width: 30px;
+}
+.description,
+.formfiled,
+.optionsfield {
+  font-family: zagRegular !important;
+  font-size: 1.25rem;
+  color: #c2adac;
+}
+@media screen and (min-width: 700px) {
+  .description,
+  .formfiled,
+  .optionsfield {
+    *zoom: 1;
+    width: auto;
+    max-width: 50%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .description:before,
+  .formfiled:before,
+  .optionsfield:before,
+  .description:after,
+  .formfiled:after,
+  .optionsfield:after {
+    content: '';
+    display: table;
+  }
+  .description:after,
+  .formfiled:after,
+  .optionsfield:after {
+    clear: both;
+  }
+}
+@media screen and (max-width: 700px) {
+  .description,
+  .formfiled,
+  .optionsfield {
+    *zoom: 1;
+    width: auto;
+    max-width: 80%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .description:before,
+  .formfiled:before,
+  .optionsfield:before,
+  .description:after,
+  .formfiled:after,
+  .optionsfield:after {
+    content: '';
+    display: table;
+  }
+  .description:after,
+  .formfiled:after,
+  .optionsfield:after {
+    clear: both;
+  }
+}
+.formfiled {
+  text-align: center;
+}
+input {
+  font-family: zagRegular !important;
+}
+#loginBTN {
+  font-family: zagRegular !important;
+  width: 100%;
+  background-color: #c2adac !important;
+}
+.optionsfield {
+  font-size: 0.75rem;
+}
+#signup {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: right;
+  font-family: zagRegular !important;
+  color: #c2adac;
+}
+#signup:before,
+#signup:after {
+  content: '';
+  display: table;
+}
+#signup:after {
+  clear: both;
+}
+#forgotpassword {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+  font-family: zagRegular !important;
+  color: #c2adac;
+  padding-right: 0;
+}
+#forgotpassword:before,
+#forgotpassword:after {
+  content: '';
+  display: table;
+}
+#forgotpassword:after {
+  clear: both;
+}
+.errorfield {
+  font-family: zagRegular !important;
+  color: #c2adac;
+  text-align: center;
+}

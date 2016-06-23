@@ -1,0 +1,79 @@
+{% extends "app.html" %}
+
+{% load staticfiles %}
+
+{% block script_stylesheet %}
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/animate.css/animate.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'bower_components/semantic/dist/semantic.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/animation.css' %}">
+<script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/semantic/dist/semantic.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
+
+{% endblock %}
+
+{% block contentpool %}
+
+<div class="content_pool animated slideInRight">
+	<div class="user_info">
+		<div class="spaceholderI"></div>
+		<div class="user_des">
+			<img src="{% static 'assets/user/shoes.png' %}">
+			<p>Flemingo Ver.III</p>
+		</div>
+		<div class="spaceholderII"></div>
+		<div class="lineholder">
+			<img src="{% static 'assets/logo/line.svg' %}">
+		</div>
+		<div class="spaceholderIII"></div>
+		<div class="info_session">
+			<div class="block">NAME</div>
+			<div class="fill_content" id="product_name">Flemingo Ver.III</div>
+		</div>
+		<div class="info_session">
+			<div class="block">COLOR</div>
+			<div class="fill_content" id="color">Fusion (Carbon, BlackII)</div>
+		</div>
+		<div class="info_session">
+			<div class="block">HEIGHT</div>
+			<div class="fill_content" id="height">7.25 CM</div>
+		</div>
+		<div class="info_session">
+			<div class="block">ANGEL</div>
+			<div class="fill_content" id="angel">B 132.3 H 42.7</div>
+		</div>
+		<div class="info_session">
+			<div class="block">SIZE</div>
+			<div class="fill_content" id="usage">US 7</div>
+		</div>
+		<div class="lineholder">
+			<img src="{% static 'assets/logo/line.svg' %}">
+		</div>
+		<div class="spaceholderIII"></div>
+		<div class="info_session">
+			<div class="block">DESIGNER</div>
+			<div class="fill_content" id="designer">Lana Delane</div>
+		</div>
+		<div class="info_session">
+			<div class="block">HARDWEAR</div>
+			<div class="fill_content" id="hardwearversion">xxxx-xxxx-xxxx-xxxx</div>
+		</div>
+		<div class="info_session">
+			<div class="block">UPDATE</div>
+			<div class="fill_content" id="updatehistory">2015-07-13</div>
+		</div>
+		<div class="info_session">
+			<div class="block">STATUS</div>
+			<div class="fill_content" id="shoestatus">IN STATES</div>
+		</div>
+		<div class="info_session">
+			<div class="block">USAGE</div>
+			<div class="fill_content" id="supervisor">97 D</div>
+		</div>
+		<div class="lineholder">
+			<img src="{% static 'assets/logo/line.svg' %}">
+		</div>
+	</div>
+</div>
+
+{% endblock %}

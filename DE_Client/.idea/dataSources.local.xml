@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Django default" uuid="67e21f63-98c3-4845-b769-71eb7a8add33">
+      <auth-required>false</auth-required>
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Django default2" uuid="3085a17e-fe3a-4429-bc1c-ec125b59386e">
+      <auth-required>false</auth-required>
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Django homestead" uuid="28992564-19bd-40fe-8da9-437a1754209e">
+      <secret-storage>memory</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>homestead</user-name>
+    </data-source>
+  </component>
+</project>
